@@ -29,10 +29,10 @@
 #  index_users_on_uid_and_provider      (uid,provider) UNIQUE
 #
 class User < ApplicationRecord
-        extend Devise::Models # 追加
-            # Include default devise modules.,
-        #  :confirmable, :omniauthable
-            devise :database_authenticatable, :registerable,
-                    :recoverable, :rememberable, :trackable, :validatable
-            include DeviseTokenAuth::Concerns::User
+  extend Devise::Models # 追加
+  # Include default devise modules.,
+  # :confirmable, :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable
+  include DeviseTokenAuth::Concerns::User
 end

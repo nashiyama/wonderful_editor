@@ -15,14 +15,14 @@ gem "active_model_serializers", "~> 0.10.0"
 gem "devise_token_auth"
 
 group :development, :test do
+  gem "factory_bot_rails"
+  gem "faker"
   gem "pry-byebug"
   gem "pry-doc"
   gem "pry-rails"
+  gem "rspec-rails", "~> 5.0.0"
   gem "rubocop-rails"
   gem "rubocop-rspec"
-  gem 'rspec-rails', '~> 5.0.0'
-  gem "faker"
-  gem "factory_bot_rails"
 end
 
 group :development do
